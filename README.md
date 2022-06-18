@@ -27,7 +27,7 @@ source: *NASA Ames, 2021*
 
 2- https://exo.mast.stsci.edu/
 
-## references
+## References
 1. Thompson, S. E., Mullally, F., Coughlin, J., Christiansen, J. L., Henze, C. E., Haas, M.
 R., & Burke, C. J. (2015). A machine learning technique to identify transit shaped
 signals. The Astrophysical Journal, 812(1), 46. Retrieved from
