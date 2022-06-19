@@ -1,7 +1,14 @@
 # ExoPlanet-detector
 ![image](https://user-images.githubusercontent.com/83130573/174457278-1b78377e-ac77-4b1f-a4e9-0acc7160cdd2.png)
 ## Summary
-### Machine Learning can help accelerate the time consuming data analysis process to find planets outside our solar system🪐! To achieve this, I trained Random Forest, Logistic Regression models, and Convolutional neural network (CNN) to detect planet's transit signal with the data from the Kepler space telescope. Using accuracy, sensitivity, precision as performance evaluation metrics, the random forest, logistic regression and CNN models respectively scored 99.08%, 99.08%, 99.12% accuracy, 99.08%, 99.08%, 100% precision, 100% recall for all of them. All the [codes](https://github.com/siudro/ExoPlanets-Classifier/tree/main/models) and [details](https://github.com/siudro/ExoPlanets-Classifier/blob/main/Planetary%20Hunters%20Report.docx.pdf) are documented in this repo. I always appreciate your valuable feedback!
+#### Machine Learning can help accelerate the time consuming data analysis process to find planets outside our solar system🪐! To achieve this, I trained Random Forest, Logistic Regression models, and Convolutional neural network (CNN) to detect planet's transit signal with the data from the Kepler space telescope. Using accuracy, sensitivity, precision as performance evaluation metrics, these models scored:
+| [Model](https://github.com/siudro/ExoPlanets-Classifier/tree/main/models) | [Random Forest](https://github.com/siudro/ExoPlanets-Classifier/blob/main/models/RandomForest/RandomForest3(best%20results).ipynb) | [Logistic Regression](https://github.com/siudro/ExoPlanets-Classifier/blob/main/models/Logistic-Regression/LogisticRegression4(best%20results)_.ipynb) | [CNN](https://github.com/siudro/ExoPlanets-Classifier/blob/main/models/CNN/CNN2(best%20results).ipynb) |
+| :---: |     :---:      |          ---: |          ---: |
+| Accuracy | 99.08%     | 99.08%    | 99.12%    |
+| Precision | 99.08%       | 99.08%      | 100%    |
+| Sensitivity(True detection rate) | 100%       | 100%      | 100%    |
+
+#### All the [codes](https://github.com/siudro/ExoPlanets-Classifier/tree/main/models) and [details](https://github.com/siudro/ExoPlanets-Classifier/blob/main/Planetary%20Hunters%20Report.docx.pdf) are documented in this repo. I always appreciate your valuable feedback!
 #### A very simplified and informative explanation on exoplanets and transit signals and how to use AI to detect them, data and data cleaning process in Arabic can be found [here](https://docs.google.com/presentation/d/1hBA3S2dAxeX4oug6FfbJNOPEeeGlCZIo/edit?usp=sharing&ouid=104485415291700481581&rtpof=true&sd=true)📑 
 ## Prerequisites
 - [Pandas](https://pandas.pydata.org/getting_started.html)
@@ -16,7 +23,7 @@
 #### There are many ways to detect a planetary system, but the most used method is *time transit*.
 #### A transit occurs when a planet passes in front of a star, resulting in a slight periodic drop in the star's light intensity, and is referred to as the *transit signal*.
 ![image](https://user-images.githubusercontent.com/83130573/174457671-a30cccc4-c9a6-4d03-a5dd-1b0b90fbc76e.png)
-source: *NASA Ames, 2021*
+Source: *NASA Ames, 2021*
 #### Once a transit signal is detected, we may use Kepler's third law of planetary motion to determine the planet's orbital size and the period required for the planet to orbit the star. These information are useful to answer many questions about the planet, such as whether it is habitable or not!
 
 ## Data
@@ -26,7 +33,9 @@ source: *NASA Ames, 2021*
 1- https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html
 
 2- https://exo.mast.stsci.edu/
-
+## Data Preprocessing
+#### Data splitting, removing outliers and instrumental noise , dropping nulls, reshaping valuesa then scaling and transformation has been performed, to makes it easier to detect a transit-like signal.
+ 
 ## References
 1. Thompson, S. E., Mullally, F., Coughlin, J., Christiansen, J. L., Henze, C. E., Haas, M.
 R., & Burke, C. J. (2015). A machine learning technique to identify transit shaped
