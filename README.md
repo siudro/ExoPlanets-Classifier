@@ -34,7 +34,7 @@ Source: *NASA Ames, 2021*
 
 2- https://exo.mast.stsci.edu/
 ## Data Preprocessing
-#### Data splitting, removing outliers and instrumental noise , dropping nulls, reshaping valuesa then scaling and transformation has been performed, to makes it easier to detect a transit-like signal.
+#### Data splitting, removing outliers and instrumental noise , dropping nulls, reshaping values then scaling and transformation has been performed, to makes it easier to detect a transit-like signal.
  
 ## References
 1. Thompson, S. E., Mullally, F., Coughlin, J., Christiansen, J. L., Henze, C. E., Haas, M.
